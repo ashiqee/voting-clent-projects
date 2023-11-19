@@ -3,12 +3,13 @@ import NavBar from "../Page/Shared/NavBar/NavBar";
 
 const MainLayout = () => {
   return (
-    <div className="">
-      <div className="bg-slate-200 bg-opacity-10 py-3">
-        {" "}
+    <div>
+      <div className="bg-opacity-30 bg-gray-200">
         <NavBar />
       </div>
-      <Outlet />
+      <div className="min-h-[calc(100vh-80px)] ">
+        <Outlet />
+      </div>
     </div>
   );
 };

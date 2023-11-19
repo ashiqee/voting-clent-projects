@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import Button from "../../../Components/SharedComponent/Button/Button";
 
 const NavBar = () => {
   const navMenu = (
@@ -7,7 +8,7 @@ const NavBar = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "border-b-4 border-red-700 hover:border-green-700"
+              ? "border-b-4 text-black border-red-700 hover:border-green-700"
               : "hover:border-green-700 hover:border-b-4"
           }
           to="/"
@@ -19,7 +20,7 @@ const NavBar = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "border-b-4 border-red-700 hover:border-green-700"
+              ? "border-b-4 text-black border-red-700 hover:border-green-700"
               : "hover:border-green-700 hover:border-b-4"
           }
           to="/info"
@@ -28,24 +29,24 @@ const NavBar = () => {
         </NavLink>
       </li>
 
-      <li>
+      {/*  <li>
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "border-b-4 border-red-700 hover:border-green-700"
+              ? "border-b-4 text-black border-red-700 hover:border-green-700"
               : "hover:border-green-700 hover:border-b-4"
           }
           to="/voteNow"
         >
           Vote Now
         </NavLink>
-      </li>
+      </li> */}
     </>
   );
 
   return (
-    <div>
-      <div className="navbar container mx-auto ">
+    <div className="w-full shadow-sm">
+      <div className="navbar  container mx-auto    text-gray-600 font-semibold text-2xl ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -71,15 +72,15 @@ const NavBar = () => {
               {navMenu}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Voting</a>
+          <a className=" text-2xl">E-Voting</a>
         </div>
         <div className="navbar-end">
           <div className="hidden lg:flex">
             <ul className="menu menu-horizontal gap-5 px-1">{navMenu}</ul>
           </div>
-          <div>
-            <a className="btn">Login</a>
-          </div>
+          <Link className="ml-5" to="/voteNow">
+            <Button text={"VOTE NOW"} />
+          </Link>
         </div>
       </div>
     </div>
