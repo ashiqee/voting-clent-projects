@@ -1,0 +1,18 @@
+{
+  "candidates": [
+    {
+      "name": "John Smith",
+      "position": "Presidential Candidate",
+      "party": "Democratic Party",
+      "img": "https://example.com/john_smith.jpg",
+      "voting_img": "https://example.com/john_smith_voting.jpg"
+    },
+    {
+      "name": "Jane Doe",
+      "position": "Presidential Candidate",
+      "party": "Republican Party",
+      "img": "https://example.com/jane_doe.jpg",
+      "voting_img": "https://example.com/jane_doe_voting.jpg"
+    }
+  ]
+}

@@ -72,7 +72,7 @@ const NavBar = () => {
               {navMenu}
             </ul>
           </div>
-          <a className=" text-2xl">E-Voting</a>
+          <a className="my-6 text-2xl">E-Voting</a>
         </div>
         <div className="navbar-end">
           <div className="hidden lg:flex">
