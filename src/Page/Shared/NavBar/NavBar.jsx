@@ -8,7 +8,7 @@ const NavBar = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "border-b-4 text-black border-red-700 hover:border-green-700"
+              ? "border-b-4 text-red-400 border-red-700 hover:border-green-700"
               : "hover:border-green-700 hover:border-b-4"
           }
           to="/"
@@ -20,7 +20,7 @@ const NavBar = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "border-b-4 text-black border-red-700 hover:border-green-700"
+              ? "border-b-4 text-red-400 border-red-700 hover:border-green-700"
               : "hover:border-green-700 hover:border-b-4"
           }
           to="/info"
@@ -72,11 +72,11 @@ const NavBar = () => {
               {navMenu}
             </ul>
           </div>
-          <a className="my-6 text-2xl">E-Voting</a>
+          <a className="my-6 text-white text-2xl">E-Voting</a>
         </div>
         <div className="navbar-end">
           <div className="hidden lg:flex">
-            <ul className="menu menu-horizontal gap-5 px-1">{navMenu}</ul>
+            <ul className="menu menu-horizontal text-white gap-5 px-1">{navMenu}</ul>
           </div>
           <Link className="ml-5" to="/voteNow">
             <Button text={"VOTE NOW"} />
